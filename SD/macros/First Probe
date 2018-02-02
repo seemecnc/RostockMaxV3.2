@@ -1,0 +1,16 @@
+M117 Beginning First Probe
+M270 P0 I1
+G32
+M117 Beginning Bed Mapping
+M270 P1 I1
+M109 S0
+M140 S0
+M106 P0 S0
+M106 P2 S0 H-1
+G29
+M106 P2 T50 S0.5 H1
+M117 Beginning Secode Probe
+G4 S1
+G32
+M500
+M117 Initial Calibration Complete
