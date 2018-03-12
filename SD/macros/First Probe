@@ -1,12 +1,14 @@
 M117 Begin RostockMAX Autolevel Calibration
-M117 Heating Hot End
+M117 Heating Bed Please Wait
 M190 S60
+M117 Heating Hot End Stay Clear of Printer
 M109 S180
 M104 S0
 M140 S0
+M117 Heat Off - Starting Autolevel Keep Clear
 M270 P0 I1
 G32
-M117 Beginning Bed Mapping
+M117 Bed Mapping
 M270 P1 I1
 M109 S0
 M140 S0
