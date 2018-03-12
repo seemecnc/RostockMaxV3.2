@@ -1,4 +1,9 @@
-M117 Beginning First Probe
+M117 Begin RostockMAX Autolevel Calibration
+M117 Heating Hot End
+M190 S60
+M109 S180
+M104 S0
+M140 S0
 M270 P0 I1
 G32
 M117 Beginning Bed Mapping
@@ -13,4 +18,4 @@ M117 Beginning Secode Probe
 G4 S1
 G32
 M500
-M117 Initial Calibration Complete
+M117 End RostockMAX Autolevel Calibration

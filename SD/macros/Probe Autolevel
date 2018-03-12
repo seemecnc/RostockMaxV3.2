@@ -1,0 +1,11 @@
+M117 RostockMAX v32 Begin Autolevel Proceedure
+M117 Heating Please Wait
+M190 S60
+M109 S180
+M104 S0
+M140 S0
+M117 Heaters Off Begin Probing
+M270 P0 I1
+G32
+M500
+M117 RostockMAX v32 Autolevel Complete

@@ -1,15 +1,15 @@
-M550 PRostock3.2                           ; Printer name
+M550 PRMAXV32                          	; Printer name
 M555 P2                                    ; Repetier Output
 M552 S1                                    ; Enable Wifi
 M575 P1 B57600 S1                          ; PanelDue Comm Setup
 G21                                        ; Work in millimetres
 G90                                        ; Send absolute coordinates
 
-M569 P0 S0                                 ; Drive 0 goes forwards (X)
-M569 P1 S0                                 ; Drive 1 goes forwards (Y)
-M569 P2 S0                                 ; Drive 2 goes forwards (Z)
-M569 P3 S0                                 ; Drive 3 goes forwards (E0)
-M569 P4 S0                                 ; Drive 4 goes forwards (E1)
+M569 P0 S1                                 ; Drive 0 goes forwards (X)
+M569 P1 S1                                 ; Drive 1 goes forwards (Y)
+M569 P2 S1                                 ; Drive 2 goes forwards (Z)
+M569 P3 S1                                 ; Drive 3 goes forwards (E0)
+M569 P4 S1                                 ; Drive 4 goes forwards (E1)
 
 M574 X2 Y2 Z2 S1                           ; set endstop configuration (all endstops at high end, active high)
 
@@ -18,8 +18,8 @@ M665 R144 L291.06 B135 H400 X0 Y0 Z0      ; delta radius, diagonal rod length, p
 M666 X0 Y0 Z0                              ; endstop offsets in mm
 
 M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolation
-M92 X100 Y100 Z100                         ; Set axis steps/mm
-M92 E91.0:91.0                           ; Set extruder steps/mm
+M92 X200 Y200 Z200                         ; Set axis steps/mm
+M92 E182.0:182.0                           ; Set extruder steps/mm
 
 M906 X1000 Y1000 Z1000 E1000:1000 I50      ; Set motor currents (mA) and idle current %
 M201 X5000 Y5000 Z5000 E5000               ; Accelerations (mm/s^2)
