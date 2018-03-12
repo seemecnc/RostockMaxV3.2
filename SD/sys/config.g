@@ -5,11 +5,11 @@ M575 P1 B57600 S1                          ; PanelDue Comm Setup
 G21                                        ; Work in millimetres
 G90                                        ; Send absolute coordinates
 
-M569 P0 S1                                 ; Drive 0 goes forwards (X)
-M569 P1 S1                                 ; Drive 1 goes forwards (Y)
-M569 P2 S1                                 ; Drive 2 goes forwards (Z)
-M569 P3 S1                                 ; Drive 3 goes forwards (E0)
-M569 P4 S1                                 ; Drive 4 goes forwards (E1)
+M569 P0 S0                                 ; Drive 0 goes forwards (X)
+M569 P1 S0                                 ; Drive 1 goes forwards (Y)
+M569 P2 S0                                 ; Drive 2 goes forwards (Z)
+M569 P3 S0                                 ; Drive 3 goes forwards (E0)
+M569 P4 S0                                 ; Drive 4 goes forwards (E1)
 
 M574 X2 Y2 Z2 S1                           ; set endstop configuration (all endstops at high end, active high)
 
