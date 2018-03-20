@@ -37,12 +37,12 @@ M305 P1 T100000 B4388 R4700 H30 L0         ; Hot end Thermistor
 M563 P0 D0 H1                              ; Hot end (T0), drive (E0), heater (H1)
 G10 P0 S0 R0                               ; Hot end operating and standby temperatures
 
-;Dual Extrusion Code
+;Dual Extrusion Code 
 ;M563 P1 D1 H1                              ; Hot end (T1), drive (E1), heater (H1)
 ;G10 P1 S0 R0                               ; Hot end (1) operating and standby temperatures
 
 M558 P5 R0.4 F2500 H20                     ; Strain gauge probe settings
-G31 P100 X0 Y0 Z-0.2                       ; Probe trigger and offset values
+G31 P100 X0 Y0 Z-0.3                       ; Probe trigger and offset values
 M270 I1 P1 S0.05                           ; Enabled Probe doubletap w/ 0.05mm tolerance
 M557 R140 S30                              ; defualt bed mapping
 M501                                       ; Load saved config values
