@@ -18,8 +18,8 @@ M665 R144 L291.06 B135 H400 X0 Y0 Z0       ; delta radius, diagonal rod length, 
 M666 X0 Y0 Z0                              ; endstop offsets in mm
 
 M350 X16 Y16 Z16 E16:16 I1                 ; Set 16x microstepping w/ Interpolation
-M92 X100 Y100 Z100                         ; Set axis steps/mm
-M92 E91.0:91.0                             ; Set extruder steps/mm
+M92 X200 Y200 Z200                         ; Set axis steps/mm
+M92 E182.0:182.0                           ; Set extruder steps/mm
 
 M906 X1000 Y1000 Z1000 E1000:1000 I50      ; Set motor currents (mA) and idle current %
 M201 X5000 Y5000 Z5000 E5000               ; Accelerations (mm/s^2)
