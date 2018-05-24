@@ -6,4 +6,4 @@
 ; Wait for set temperatures to be reached
 M116 P0
 M83
-G1 E140 F3000
+G1 E140 F7500

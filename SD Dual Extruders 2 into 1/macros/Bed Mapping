@@ -10,5 +10,6 @@ M106 P2 S0 H-1
 G29
 M500
 G4 S1
+M106 P2 T50 S0.5 H1
 G28
 M117 NOTE Any Auto-Probe (G32) done after bed mapping will disable previous bed mapping!

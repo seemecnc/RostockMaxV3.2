@@ -1,4 +1,4 @@
-M550 PRostockMAXv32Dual                    ; Printer name
+M550 PRMAXV32                              ; Printer name
 M555 P2                                    ; Repetier Output
 M552 S1                                    ; Enable Wifi
 M575 P1 B57600 S1                          ; PanelDue Comm Setup
@@ -13,7 +13,7 @@ M569 P4 S0                                 ; Drive 4 goes forwards (E1)
 
 M574 X2 Y2 Z2 S1                           ; set endstop configuration (all endstops at high end, active high)
 
-M665 R144 L291.06 B135 H400 X0 Y0 Z0      ; delta radius, diagonal rod length, printable radius and homed height
+M665 R144 L291.06 B135 H400 X0 Y0 Z0       ; delta radius, diagonal rod length, printable radius and homed height
                                            ; Y X Z are tower angle offsets
 M666 X0 Y0 Z0                              ; endstop offsets in mm
 
@@ -46,5 +46,5 @@ G31 P100 X0 Y0 Z-0.3                       ; Probe trigger and offset values
 M557 R140 S30                              ; defualt bed mapping
 M501                                       ; Load saved config values
 T0                                         ; Select Tool 0
-M375							     ; Load height map
+M375									   ; Load height map
 
