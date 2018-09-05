@@ -1,3 +1,7 @@
-M83
-T0 P0
-G1 E-140 F7500
+; This file is intentionally blank
+; 
+; Artmemis (all models) and RostockMAX v3.2 
+; Dual Extrusion machines do not use this file.
+;
+
+
