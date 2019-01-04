@@ -23,12 +23,12 @@ M92 E182.0:182.0                           ; Set extruder steps/mm
 
 M906 X1200 Y1200 Z1200 E1200:1200 I50      ; Set motor currents (mA) and idle current %
 M201 X4200 Y4200 Z4200 E5000               ; Accelerations (mm/s^2)
-M203 X18000 Y18000 Z18000 E18000           ; Maximum speeds (mm/min)
+M203 X15000 Y15000 Z15000 E15000           ; Maximum speeds (mm/min)
 M566 X2000 Y2000 Z2000 E2000               ; Maximum instant speed changes mm/minute
 
 M106 P0 H-1                                ; Part Cooling Fan
 M106 P1 S0.5 H-1                           ; Case fan
-M106 P2 T50 S0.5 H1                        ; Heat sink fan
+M106 P2 T50 S0.7 H1                        ; Heat sink fan
 
 M307 H0 B0                                 ; Heated Bed (H2)
 M305 P0 T100000 B4388 R4700 H30 L0         ; Bed thermistor
